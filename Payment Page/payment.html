@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkBoard</title>
+    
+    <!-- <link rel="shortcut icon" href="/images/ico/favicon.ico"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <!-- ----- font Awesome ----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="payment.css">
+
+    
+
+</head>
+<body>
+    <!-- --------- Header --------- -->
+    
+
+<nav class="navbar navbar-expand-lg bg-white px-4">
+  <div class="container-fluid ">
+      <img src="Resources/Logo.png" alt="" class="header-logo">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon hamburger">
+        <i class="fas fa-bars"></i>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse p-sm-4 p-lg-0 text-sm-end text-md-end" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-sm-auto text-sm-end text-md-end float-end">
+        <li class="nav-item d-flex align-items-center text-sm-end text-md-end justify-content-sm-end justify-content-xs-end">
+          <form class="d-flex align-items-center">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </form>
+        </li>
+        <li class="nav-item d-flex align-items-center text-sm-end text-md-end justify-content-sm-end justify-content-xs-end justify-content-end">
+          <a class="nav-link cart-btn" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+        <li class="nav-item d-flex justify-content-sm-end justify-content-end">
+          <a class="nav-link redeem-btn">
+            <button>Redeem</button>
+          </a>
+          <a class="nav-link login-btn">
+            <button>Log in</button>
+          </a>
+        </li>
+      </ul> 
+    </div>
+  </div>
+</nav>
+    
+    <!-- --------- Payment Page --------- -->
+    <section>
+        <div class="wrapper payment-section">
+            <div class="payment-container">
+              <p class="back-to-cart"> <span>&#60;</span> &nbsp;back to cart</p>
+              <div class="stripe">
+                  <img src="Resources/check.svg" alt="" id="stripe">
+                <span class="stripe-pay">Stripe</span>
+                
+              </div>
+              <div class="credit-card">
+                <img src="Resources/check.svg" alt="" id="credit">
+                <span class="credit-pay">Credit card</span>
+              </div>
+
+              <div class="stripe-details">
+                <input type="text" placeholder="Enter your Stripe ID">
+                <button><a href=""> Pay Now</a></button>
+              </div>
+
+              <div class="card-details">
+                <input type="text" placeholder="Card number">
+                <div>
+                  <div>
+                    <input type="datetime" placeholder="MM"> 
+                    <span> / </span>
+                    <input type="datetime" placeholder="YY"> 
+                  </div>
+                  <input type="number" placeholder="CVV"> 
+                </div>
+                <button><a href=""> Pay Now</a></button>
+              </div>
+            </div>
+            <div class="summary-container">
+                <h3>Summary</h3>
+                <div class="summary-content">
+                    <p class="subtotal">
+                        Subtotal : <span class="subtotal-price"> $1234</span>
+                    </p>
+                    <p class="discount">
+                        Discount : <span class="discount-price"> $123</span>
+                    </p>
+                    <p class="total">
+                        Total : <span class="total-price"> $1234</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ---------Footer--------- -->
+    <section class="footer-section">
+      <div class="wrapper">
+        <footer>
+          <div class="footer-logo">
+            <img src="Resources/Footer-logo.png" alt="">
+          </div>
+          <div class="copyright">
+            <p>&copy; 2021 WorkBoard Inc. All Rights Reserved. Terms of use and privacy policy</p>
+          </div>
+          <div class="social-links">
+            <li>
+              <a href="https://www.facebook.com/workboardInc" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/WorkBoardInc" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/company/workboard-inc-"  target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.workboard.com/okr-podcast/" target="_blank">
+                <img src="Resources/Footer_OKR.png" alt="">
+              </a>
+            </li>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+    <script src="payment.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    
+    
+   </body>
+</html>

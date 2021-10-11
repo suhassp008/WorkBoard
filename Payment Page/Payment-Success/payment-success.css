@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap');
+
+
+:root{
+    --body-color-light : #f5f7f9;
+    --nav-button-color : #07648d;
+    --dark-blue: #003249;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+body{
+    background-color: #003249;
+    width:100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* *--------------------- Login section --------------------- */
+.payment-success-section{
+    position:relative;
+    width:100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.payment-success-section .payment-success-container{
+    position: relative;
+    width:400px;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 40px 20px;
+    margin: 20px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.payment-success-section .payment-success-container .success{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.payment-success-section .payment-success-container .success i{
+    font-size: 50px;
+    color: #4BB543;
+}
+.payment-success-section .payment-success-container .success p{
+    font-size: 1.5rem;
+    color: #4BB543;
+    margin-top: 10px;
+}
+.payment-success-section .payment-success-container .success div{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment-success-section .payment-success-container .success div .continue{
+    padding: 8px 16px;
+    border: 1px solid var(--nav-button-color);
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
+.payment-success-section .payment-success-container .success div .continue a{
+    text-decoration: none;
+    color: var(--nav-button-color);
+}
+.payment-success-section .payment-success-container .success div .view-course{
+    padding: 8px 16px;
+    border-radius: 3px;
+    background-color: var(--nav-button-color);
+    margin: 5px;
+    border: none;
+}
+.payment-success-section .payment-success-container .success div .view-course a{
+    text-decoration: none;
+    color: #fff;;
+}
+
+
+
+.vectors{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vectors img{
+    width:150%;
+    position: absolute;
+    bottom: 120px;
+}
+.vectors .vector-bottom{
+    max-width: 700px;
+    width:100%;
+    height: 180px;
+}
+
+/* *--------------------- Footer section --------------------- */
+
+.footer-section{
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    position: relative;
+    width:1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-section{
+    background-color: #151B26;
+}
+footer{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin:40px 0;
+    padding: 0 20px;
+}
+.footer-logo img{
+    height:37px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.copyright p{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-links li{
+    list-style: none;
+    margin: 0px 10px;
+}
+.social-links li a{
+    text-decoration: none;
+}
+.social-links li a i{
+    color: #fff;
+    font-size: 25px;
+}
+.social-links li a img{
+    height: 47px;
+}
+/* *--------------------- Media Queries--------------------- */
+
+@media (max-width:991px){
+    .vectors{
+        display: none;
+    }
+    footer{
+        justify-content: center;
+        margin:20px 0;
+        padding: 0 20px;
+    }
+    footer div{
+        margin-top: 10px;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: 14px;
+    }
+    footer{
+        justify-content: center;
+        margin:20px 0;
+        padding: 0 20px;
+    }
+}
+@media (max-width:468px){
+    .redeem-section .redeem-container input[type="text"]{
+        width:100%;
+
+    }
+}
+@media screen and (orientation:landscape) and (max-width:991px){
+    body{
+        overflow: scroll;
+    }
+    .footer-section{
+        display: none;
+    }
+}
