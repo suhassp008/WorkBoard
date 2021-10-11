@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WorkBoard</title>
+
+  <!-- <link rel="shortcut icon" href="/images/ico/favicon.ico"> -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+  <!-- ----- font Awesome ----- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="sign-up.css">
+
+
+
+</head>
+
+<body>
+  <!-- --------- Header --------- -->
+  <nav class="navbar navbar-expand-lg bg-white px-4">
+    <div class="container-fluid ">
+      <img src="Resources/Logo.png" alt="" class="header-logo">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon hamburger">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse p-sm-4 p-lg-0 text-sm-end text-md-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-sm-auto text-sm-end text-md-end float-end">
+          <li
+            class="nav-item d-flex align-items-center text-sm-end text-md-end justify-content-sm-end justify-content-xs-end">
+            <form class="d-flex align-items-center">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <i class="fas fa-search"></i>
+            </form>
+          </li>
+          <li
+            class="nav-item d-flex align-items-center text-sm-end text-md-end justify-content-sm-end justify-content-xs-end justify-content-end">
+            <a class="nav-link cart-btn" href="#">
+              <i class="fas fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li class="nav-item d-flex justify-content-sm-end justify-content-end">
+            <a class="nav-link redeem-btn">
+              <button>Redeem</button>
+            </a>
+            <a class="nav-link login-btn">
+              <button>Log in</button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- -------------------   Signup Section    -------------------------- -->
+  <section>
+    <div class="wrapper">
+      <div class="signup-container">
+        <div class="signup-head">Get Started with WorkBoard</div>
+        <div class="form-section">
+          <div class="form-head">Lorem Ipsum</div>
+          <div class="form-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+          <form action="">
+            <label for="email" class="email"> <span class="required">&#42;</span> Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="fname"><span class="required">&#42;</span> First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="lname"><span class="required">&#42;</span> Last name:</label>
+            <input type="text" id="lname" name="lname">
+            <label for="mobnumber"><span class="required">&#42;</span> Mobile number: </label>
+            <input type="text" id="mobnumber" name="mobnumber">
+            <label for="jobtitle"><span class="required">&#42;</span> Job title:</label>
+            <input type="text" id="jobtitle" name="jobtitle">
+            <div class="btn-sec">
+              <button><a href="#">Sign in</a></button>
+            </div>
+
+            <div class="last-section">
+              <div class="already-member"> Already a memeber?</div>
+              <a href="#">Login</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <div class="vectors">
+      <img src="Resources/Dots-bottom.png" alt="">
+      <img src="Resources/Login-vector.png" alt="" class="vector-bottom">
+    </div> -->
+
+
+  <!-- ---------Footer--------- -->
+  <section class="footer-section">
+    <div class="wrapper">
+      <footer>
+        <div class="footer-logo">
+          <img src="Resources/Footer-logo.png" alt="">
+        </div>
+        <div class="copyright">
+          <p>&copy; 2021 WorkBoard Inc. All Rights Reserved. Terms of use and privacy policy</p>
+        </div>
+        <div class="social-links">
+          <li>
+            <a href="https://www.facebook.com/workboardInc" target="_blank">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/WorkBoardInc" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/company/workboard-inc-" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.workboard.com/okr-podcast/" target="_blank">
+              <img src="Resources/Footer_OKR.png" alt="">
+            </a>
+          </li>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+
+
+</body>
+
+</html>
