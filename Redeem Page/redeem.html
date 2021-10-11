@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WorkBoard</title>
+    
+    <!-- <link rel="shortcut icon" href="/images/ico/favicon.ico"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+    <!-- ----- font Awesome ----- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="redeem.css">
+
+    
+
+</head>
+<body>
+   <!-- --------- Redeem section --------- -->
+   <section class="redeem-section">
+       <div class="redeem-container">
+           <div class="redeem">
+            <p>Enter Redeem Code</p>
+            <input type="text" placeholder="Enter your redeem code">
+            <button class="redeem-btn">Redeem</button>
+           </div>
+            
+            <!-- <i class="fas fa-times" id="close"></i>  -->
+
+            <div class="success">
+                <i class="fas fa-check-circle" id="success-icon"></i>
+                <p>Redeem Successful!</p>
+                <div>
+                    <button class="continue"><a href=""> Continue </a></button>
+                    <button class="view-course"><a href=""> View Course </a></button>
+                </div>
+            </div>
+
+        </div>
+      
+       
+   </section>
+
+   <div class="vectors">
+     <img src="Resources/Dots-bottom.png" alt="">
+     <img src="Resources/Login-vector.png" alt="" class="vector-bottom">
+   </div>
+   
+
+
+    <!-- ---------Footer--------- -->
+    <section class="footer-section">
+      <div class="wrapper">
+        <footer>
+          <div class="footer-logo">
+            <img src="Resources/Footer-logo.png" alt="">
+          </div>
+          <div class="copyright">
+            <p>&copy; 2021 WorkBoard Inc. All Rights Reserved. Terms of use and privacy policy</p>
+          </div>
+          <div class="social-links">
+            <li>
+              <a href="https://www.facebook.com/workboardInc" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/WorkBoardInc" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/company/workboard-inc-"  target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.workboard.com/okr-podcast/" target="_blank">
+                <img src="Resources/Footer_OKR.png" alt="">
+              </a>
+            </li>
+          </div>
+        </footer>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelector('.redeem-btn').onclick = ()=>{
+            document.querySelector('.redeem').style.display = "none";
+            document.querySelector('.success').style.display = "flex";
+        }
+    </script>
+    
+   </body>
+</html>
